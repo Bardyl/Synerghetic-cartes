@@ -12,6 +12,7 @@ var progress     = document.getElementById('progress');
 var result       = document.getElementById('result');
 var resultimg    = document.getElementById('resultimg');
 var sharebutton  = document.getElementById('share');
+var share        = document.getElementById('share').parentElement;
 var shareElement = document.getElementById('share-share');
 var getUrlInput  = document.getElementById('getURL');
 var uploadPerc   = document.getElementById('upload-percentage');
