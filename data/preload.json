@@ -1,0 +1,64 @@
+{
+  "files": [{
+      "assets": [{
+          "file": "img/facebook.png"
+        }, {
+          "file": "img/instagram.png"
+        }, {
+          "file": "img/left-arr.png"
+        }, {
+          "file": "img/loader.png"
+        }, {
+          "file": "img/logo.png"
+        }, {
+          "file": "img/logofilter.png"
+        }, {
+          "file": "img/right-arr.png"
+        }, {
+          "file": "img/s_facebook.png"
+        }, {
+          "file": "img/s_instagram.png"
+        }, {
+          "file": "img/s_twitter.png"
+        }, {
+          "file": "img/s_viadeo.png"
+        }, {
+          "file": "img/s_vine.png"
+        }, {
+          "file": "img/s_website.png"
+        }, {
+          "file": "img/synerg.gif"
+        }, {
+          "file": "img/synerghetic.gif"
+        }, {
+          "file": "img/twitter.png"
+        }
+      ], "pictures": [{
+          "file": "data/img/laure.png"
+        }, {
+          "file": "data/img/mathieu.png"
+        }, {
+          "file": "data/img/annesophie.png"
+        }, {
+          "file": "data/img/soufiane.png"
+        }, {
+          "file": "data/img/lucie.png"
+        }, {
+          "file": "data/img/laura.png"
+        }, {
+          "file": "data/img/jeremy.png"
+        }, {
+          "file": "data/img/philippe.png"
+        }, {
+          "file": "data/img/nicolas.png"
+        }, {
+          "file": "data/img/alexandre.png"
+        }, {
+          "file": "data/img/franck.png"
+        }, {
+          "file": "data/img/sebastien.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #490c66;
+    margin: 0;
+    font-family: 'Fedra Sans Std', sans-serif;
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section#preloading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+    background: #fff;
+    transition: 1s;
+}
+
+    #preloading p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        position: relative;
+        top: 35%;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    #preloading video {
+        width: 8%;
+        display: inline-block;
+        margin-bottom: 25px;
+        background: #fff;
+    }
+
+    #loading-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: #552474;
+        transition: .3s;
+    }
+
+section#left {
+    background: #f5f5f5;
+    float: left;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+    h1 {
+        font-weight: lighter;
+        text-align: center;
+        padding: 0 15%;
+        margin-top: 10%;
+        margin-bottom: 11%;
+        font-size: 20px;
+    }
+
+    aside {
+        position: relative;
+        width: 100%;
+        height: 43%;
+    }
+
+        aside > div:first-child {
+            display: block;
+            width: 100%;
+            height: 77%;
+            position: relative;
+        }
+
+            .slider-left-arr {
+                width: 25%;
+                height: 100%;
+                background: url('../img/left-arr.png') no-repeat center center;
+                float: left;
+                cursor: pointer;
+                opacity: .6;
+                transition: .3s;
+            }
+
+            .slider-center, #member-image {
+                width: 50%;
+                height: 100%;
+                float: left;
+                left: 25%;
+                transition: opacity .3s ease;
+                opacity: 1;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            }
+
+                .transition {
+                    opacity: 0;
+                    transition-duration: .3s;
+                }
+
+            .slider-right-arr {
+                width: 25%;
+                height: 100%;
+                background: #555;
+                background: url('../img/right-arr.png') no-repeat center center;
+                float: left;
+                left: 75%;
+                cursor: pointer;
+                opacity: 1;
+                transition: .3s;
+            }
+
+            .slider-left-arr:hover,
+            .slider-right-arr:hover {
+                opacity: 1;
+            }
+
+        aside > div:last-child {
+            display: block;
+            width: 100%;
+            height: 23%;
+            position: relative;
+            color: #4a4a4a;
+        }
+
+            aside > div:last-child p:first-child {
+                text-transform: uppercase;
+                text-align: center;
+                margin: 0;
+                padding-top: 20px;
+            }
+
+            aside > div:last-child p:last-child {
+                text-align: center;
+                font-size: 12px;
+                margin: 0;
+                margin-top: 3px;
+                font-weight: bold;
+            }
+
+    footer {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+    }
+
+        footer p {
+            display: block;
+            width: 100%;
+            padding: 0 15%;
+        }
+
+            footer p:first-child img {
+                width: 100%;
+            }
+
+            footer p:last-child a {
+                width: 16%;
+                display: inline-block;
+            }
+
+            footer p:last-child a:not(:last-child) {
+                margin-right: 5%;
+            }
+
+                footer p:last-child a img {
+                    width: 100%;
+                }
+
+section#right {
+    float: left;
+    width: 75%;
+    height: 100%;
+    left: 25%;
+}
+
+    #right > div:not(:last-child) {
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-spacing: 0;
+        position: relative;
+        z-index: 5;
+        transition: .3s;
+        opacity: 1;
+    }
+
+    /* #app-result is specfied for card.php
+     * because of removing the three first
+     * div inside #right
+     */
+    #right > div:nth-child(1):not(#app-result) {
+        width: 33%;
+    }
+
+        .app-info.left {
+            width: 66%;
+            position: absolute;
+            left: 17%;
+            top: 13%;
+        }
+
+            .app-info.left p {
+                font-weight: lighter;
+                margin: 0;
+                margin-left: 30%;
+                width: 70%;
+                text-align: right;
+                border-right: 7px solid #490c66;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+            }
+
+            .app-info.left p.error {
+                color: #c0392b;
+                border-right: 7px solid #c0392b;
+                transition: .3s;
+                opacity: 0;
+            }
+
+            .app-info.left span {
+                display: block;
+                width: 100%;
+                border: 2px solid #552474;
+                text-align: center;
+                padding: 10px 0;
+                font-weight: bold;
+                margin-top: 8%;
+                cursor: pointer;
+            }
+
+            #trueInputFile {
+                opacity: 0;
+            }
+
+    #right > div:nth-child(2) {
+        width: 34%;
+        position: relative;
+    }
+
+        #center-box {
+            width: 100%;
+            height: 74%;
+            position: absolute;
+            top: 13%;
+            bottom: 13%;
+            left: 0;
+            right: 0;
+            border: 3px dotted #552474;
+            background: url('../img/loader.png') no-repeat center center;
+            background-size: 66% auto;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: .2s;
+        }
+
+            #upload-percentage {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                top: 70%;
+                display: inline-block;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 24px;
+                transition: .2s;
+                font-weight: bold;
+            }
+
+            #upload-percentage.error {
+                color: #c0392b;
+            }
+
+        #loader {
+            opacity: .8;
+            position: absolute;
+            top: 20%;
+            bottom: 20%;
+            left: 3%;
+            width: 94%;
+            z-index: 2;
+            background: #fff;
+            transition: .2s;
+        }
+
+    #right > div:nth-child(3) {
+        width: 33%;
+        position: relative;
+    }
+
+        .app-info.right {
+            width: 66%;
+            position: absolute;
+            right: 17%;
+            bottom: 13%;
+        }
+
+            .app-info.right p {
+                font-weight: lighter;
+                margin: 0;
+                margin-bottom: 15px;
+                margin-right: 30%;
+                width: 70%;
+                text-align: left;
+                border-left: 7px solid #490c66;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+
+            .app-info.right p.error {
+                color: #c0392b;
+                border-left: 7px solid #c0392b;
+                transition: .3s;
+                opacity: 0;
+            }
+
+            .app-info.right span {
+                display: block;
+                width: 100%;
+                background: #552474;
+                text-align: center;
+                padding: 10px 0;
+                font-weight: bold;
+                margin-top: 8%;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+    #app-result {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        z-index: 4;
+        background: #fff;
+        opacity: 0;
+        transition: .3s;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #app-result:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+
+    #app-result.open {
+        z-index: 10;
+    }
+
+    #card #app-result {
+        opacity: 1;
+    }
+
+        #progress {
+            width: 18%;
+            position: relative;
+            font-size: 20px;
+            vertical-align:middle;
+            display:inline-block;
+            line-height:normal;
+            margin-top: -10%;
+            transition: .3s;
+            opacity: 1;
+        }
+
+            #progress p:first-child {
+                text-align: center;
+            }
+
+            #progress img {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+
+        #result {
+            position: relative;
+            bottom: 10%;
+            top: 10%;
+            height: 70%;
+            display: none;
+            line-height: normal;
+            transition: 1s;
+            opacity: 0;
+        }
+
+        #card #result {
+            opacity: 1;
+            display: inline-block;
+        }
+
+            #result p:first-child {
+                height: 100%;
+                transition: .5s;
+            }
+
+                #result p img {
+                    transition: 1s;
+                }
+
+                #result p:first-child img {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                }
+
+                #card #result p:first-child img {
+                    height: 100%;
+                }
+
+            #result > p:last-child {
+                display: block;
+                width: 62%;
+                margin: auto;
+                background: #552474;
+                text-align: center;
+                padding: 20px 0;
+                font-weight: bold;
+                margin-top: 8%;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #result #share-share {
+                transition: 1s;
+                opacity: 0;
+                display: none;
+                margin-top: 40px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+                #result #share-share input {
+                    color: #4a4a4a;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 18px;
+                    padding: 8px;
+                    border: 3px solid #552474;
+                    width: 130%;
+                    margin-left: -15%;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
+                #result #share-share img {
+                    width: 35px;
+                    margin: 10px;
+                    cursor: pointer;
+                }

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Laure",
+    "picture": "data/img/laure.png",
+    "role": "Présidente"
+  },
+  {
+    "name": "Mathieu",
+    "picture": "data/img/mathieu.png",
+    "role": "Secrétaire Général"
+  },
+  {
+    "name": "Anne-Sophie",
+    "picture": "data/img/annesophie.png",
+    "role": "Trésorière"
+  },
+  {
+    "name": "Soufiane",
+    "picture": "data/img/soufiane.png",
+    "role": "Vice-trésorier"
+  },
+  {
+    "name": "Lucie",
+    "picture": "data/img/lucie.png",
+    "role": "Responsable projets"
+  },
+  {
+    "name": "Laura",
+    "picture": "data/img/laura.png",
+    "role": "Responsable projets"
+  },
+  {
+    "name": "Alexandre",
+    "picture": "data/img/alexandre.png",
+    "role": "Responsable prospection"
+  },
+  {
+    "name": "Franck",
+    "picture": "data/img/franck.png",
+    "role": "Responsable Commercial"
+  },
+  {
+    "name": "Sébastien",
+    "picture": "data/img/sebastien.png",
+    "role": "Responsable Commercial"
+  },
+  {
+    "name": "Philippe",
+    "picture": "data/img/philippe.png",
+    "role": "Responsable communication"
+  },
+  {
+    "name": "Jérémy",
+    "picture": "data/img/jeremy.png",
+    "role": "Responsable qualité"
+  },
+  {
+    "name": "Nicolas",
+    "picture": "data/img/nicolas.png",
+    "role": "Responsable qualité"
+  }
+]
