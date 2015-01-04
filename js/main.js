@@ -33,7 +33,7 @@ var appInfoRightError = document.getElementById('app-info-right-error');
 var uploadError = "Désolé, l'upload de la photo a échoué. <br />Merci de réessayer.";
 
 // Domain of website
-var domain = 'http://noel.synerghetic.net/';
+var domain = 'http://cartes.synerghetic.net/';
 
 var Upload = {
     initHandlers: function() {
