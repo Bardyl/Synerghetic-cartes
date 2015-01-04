@@ -8,7 +8,7 @@
     <meta name="description" content="À l’occasion des fêtes de fin d’année, devenez un enfant du Web avec Synerg'hetic !" />
     <meta property="og:title" content="Synerg'hetic | Les enfants du Web !" />
     <meta property="og:description" content="À l’occasion des fêtes de fin d’année, devenez un enfant du Web avec Synerg'hetic !" />
-    <meta property="og:image" content="http://menutmathi.eu/synergnoel/img/s_website.png" />
+    <meta property="og:image" content="http://cartes.synerghetic.net/img/s_website.png" />
 </head>
 <body>
     <section id="preloading">
