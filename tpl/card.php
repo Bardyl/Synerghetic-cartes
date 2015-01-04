@@ -43,7 +43,7 @@
         <div id="app-result" class="open">
             <div id="result">
                 <p><img id="resultimg" src="uploads/<?php echo $cardId; ?>.png" alt="" /></p>
-                <p><span id="share" onclick="window.location = '/';">Créer ma propre carte !</span></p>
+                <p onclick="window.location = '/';"><span id="share">Créer ma propre carte !</span></p>
             </div>
         </div>
     </section>
